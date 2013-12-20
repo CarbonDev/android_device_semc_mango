@@ -28,3 +28,6 @@ PRODUCT_DEVICE := mango
 PRODUCT_BRAND := SEMC
 PRODUCT_MANUFACTURER := SEMC
 PRODUCT_MODEL := Xperia Mini Pro
+
+$(call inherit-product, device/semc/mango/mango.mk)
+$(call inherit-product-if-exists, vendor/semc/mango/mango-vendor.mk)
